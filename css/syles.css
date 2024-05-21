@@ -1,3 +1,27 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -5,6 +29,38 @@ body {
     font-weight: 400;
     text-indent:15px;
     background-color: #FFFFFF;
+}
+
+section{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+/* ------------------------------Header--------------------*/
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+.page-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation{
+    display: flex;
+}
+.page-nav{
+    display: flex;
+    gap: 40px; 
+    padding-left: 72px;
+}
+
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 .accent{
     font-family: "Raleway", sans-serif;
@@ -31,6 +87,10 @@ body {
 .page-address {
     font-style: normal;
 }
+.list-address{
+    display: flex;
+    gap: 40px; 
+}
 .address-class{
     font-size: 16px;
     font-weight: 400;
@@ -50,6 +110,9 @@ body {
         text-align: left;
         color:#404BBF; 
 }
+
+/* -------------------------Hero Solutions-------------------*/
+
 .page-title{
 font-weight: 700;
 font-size: 56px;
@@ -58,9 +121,72 @@ line-height: 1.07;
 text-align: center;
 color: #FFFFFF;
 }
+
+.effective-container{
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.button-order {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    margin-top: 48px;
+    background: #4d5ae5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background: #4d5ae5;
+}
+
+.button-order:hover,
+.button-order:focus {
+    background-color: #404BBF
+}
+
+/*-------------------------Section Features-------------------*/
+
+.hidden-header{
+    visibility: hidden;
+}
+.features-title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color:#2E2F42;
+        margin-bottom: 8px;
+}
+.features-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color:#434455; 
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
 .solutions {
     background-color: #2E2F42;
 }
+
+.features-container{
+    margin: 0 auto;
+}
+
 .link-menu{
     font-size: 16px;
     font-weight: 500;
@@ -88,35 +214,11 @@ color: #FFFFFF;
     color:#404BBF; 
     text-decoration: underline;
 }
-.button-order{
-    background: #4D5AE5;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: left;
-        color: #FFFFFF;
-        cursor: pointer;
-        font-family: "Roboto", sans-serif;
-}
-.button-order:hover,
-.button-order:focus {
-    background-color:#404BBF
-}
-.features-title{
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color:#2E2F42;
-}
-.features-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color:#434455; 
+/*-------------------------------Team members-------------------------*/
+
+.people{
+    display: flex;
+    gap: 24px;
 }
 .team-members{
     background-color: #F4F4FD;
@@ -129,10 +231,13 @@ color: #FFFFFF;
         text-align: center;
         color:#2E2F42; 
         text-transform: capitalize;
+        padding-top: 4px;
+        margin-bottom: 72px;
 }
-.container {
+.box {
     background-color: #FFFFFF;
 }
+
 .members-name{
         font-size: 20px;
         font-weight: 500;
@@ -140,6 +245,8 @@ color: #FFFFFF;
         letter-spacing: 0.02em;
         text-align: center;
         color:#2E2F42; 
+        padding-top: 32px;
+        padding-bottom: 8px;
 }
 .team-members-description {
     font-size: 16px;
@@ -147,7 +254,10 @@ color: #FFFFFF;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 32px;
 }
+
+/*--------------------------------Section Portfolio----------------------*/
 .portfolio-title-main {
     font-size: 36px;
     font-weight: 700;
@@ -156,7 +266,19 @@ color: #FFFFFF;
     text-align: center;
     color: #2E2F42; 
     text-transform: capitalize; 
+    padding-top: 4px;
+    margin-bottom: 72px;
 }
+
+.portfolio-container{
+margin:0 auto;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .portfolio-title{
         font-size: 20px;
         font-weight: 500;
@@ -164,16 +286,35 @@ color: #FFFFFF;
         letter-spacing: 0.02em;
         text-align: left;
         color:#2E2F42; 
+        padding-top: 32px;
+        padding-bottom: 8px;
+        padding-left: 16px;
 }
+
 .portfolio-description {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: left;
-        color: #434455; 
+        color: #434455;
+        margin-bottom: 32px;
+        padding-left: 16px;
 }
+.card-text{
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+}
+
+/*-----------------------------------Footer--------------------------*/
 .footer{
     background-color: #2E2F42;
+}
+
+.footer-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-indent: 0;
 }
 .footer-accent{
     font-family: Raleway;
@@ -194,7 +335,8 @@ color: #FFFFFF;
         text-align: left;
         color: #4d5ae5; 
         text-decoration: none;
-        text-transform: uppercase; 
+        text-transform: uppercase;
+        
 }
 .footer-description{
     font-size: 16px;
@@ -202,8 +344,4 @@ color: #FFFFFF;
     letter-spacing: 0.02em;
     text-align: left;
     color: #F4F4FD; 
-}
-ul {
-    list-style-type: none;
-    margin: 0;
 }

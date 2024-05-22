@@ -54,7 +54,6 @@ padding-bottom: 120px;
 .page-nav{
     display: flex;
     gap: 40px; 
-    padding-left: 72px;
 }
 
 .container{
@@ -308,9 +307,6 @@ margin:0 auto;
         letter-spacing: 0.02em;
         text-align: left;
         color:#2E2F42; 
-        padding-top: 32px;
-        padding-bottom: 8px;
-        padding-left: 16px;
         margin-bottom: 8px; 
 }
 
@@ -321,7 +317,6 @@ margin:0 auto;
         text-align: left;
         color: #434455;
         margin-bottom: 32px;
-        padding-left: 16px;
 }
 .card-text{
     border-bottom: 1px solid #E7E9FC;

@@ -49,6 +49,7 @@ padding-bottom: 120px;
 
 .header-navigation{
     display: flex;
+    align-items: center;
 }
 .page-nav{
     display: flex;
@@ -83,6 +84,7 @@ padding-bottom: 120px;
     text-decoration: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 .page-address {
     font-style: normal;
@@ -120,11 +122,8 @@ letter-spacing: 0.02em;
 line-height: 1.07;
 text-align: center;
 color: #FFFFFF;
-}
-
-.effective-container{
-    padding-top: 68px;
-    padding-bottom: 68px;
+max-width: 496px; 
+margin: 0 auto;
 }
 
 .button-order {
@@ -138,14 +137,11 @@ color: #FFFFFF;
     margin: 0 auto;
     margin-top: 48px;
     background: #4d5ae5;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 10px;
     border-radius: 4px;
-    padding: 16px 32px;
-    background: #4d5ae5;
+    display: block; 
+    min-width: 169px; 
+    height: 56px; 
+    border: none; 
 }
 
 .button-order:hover,
@@ -155,9 +151,19 @@ color: #FFFFFF;
 
 /*-------------------------Section Features-------------------*/
 
-.hidden-header{
-    visibility: hidden;
-}
+.visually-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        clip-path: inset(100%);
+    }
+
 .features-title{
         font-size: 20px;
         font-weight: 500;
@@ -181,6 +187,12 @@ color: #FFFFFF;
 }
 .solutions {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px; 
+}
+
+.features-container-list {
+    width: calc((100% - 72px) / 4);
 }
 
 .features-container{
@@ -195,6 +207,7 @@ color: #FFFFFF;
     text-align: left;
     color:#2E2F42; 
     text-decoration: none;
+    padding: 24px 0 24px;
 }
 .link-menu:hover,
 .link-menu:focus{
@@ -222,6 +235,7 @@ color: #FFFFFF;
 }
 .team-members{
     background-color: #F4F4FD;
+    padding: 120px 0 120px; 
 }
 .team-title {
         font-size: 36px;
@@ -236,6 +250,8 @@ color: #FFFFFF;
 }
 .box {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .members-name{
@@ -245,8 +261,8 @@ color: #FFFFFF;
         letter-spacing: 0.02em;
         text-align: center;
         color:#2E2F42; 
-        padding-top: 32px;
-        padding-bottom: 8px;
+        text-align: center;
+        margin-bottom: 8px; 
 }
 .team-members-description {
     font-size: 16px;
@@ -254,9 +270,11 @@ color: #FFFFFF;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin-bottom: 32px;
+    text-align: center;
 }
-
+.member-title {
+    padding: 32px 0; 
+}
 /*--------------------------------Section Portfolio----------------------*/
 .portfolio-title-main {
     font-size: 36px;
@@ -266,8 +284,7 @@ color: #FFFFFF;
     text-align: center;
     color: #2E2F42; 
     text-transform: capitalize; 
-    padding-top: 4px;
-    margin-bottom: 72px;
+    margin-bottom: 72px; 
 }
 
 .portfolio-container{
@@ -277,6 +294,11 @@ margin:0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px; 
+}
+
+.box-portfolio{
+    width: calc((100% - 48px) / 3); 
 }
 
 .portfolio-title{
@@ -304,16 +326,16 @@ margin:0 auto;
     border-bottom: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
+    padding: 32px 16px; 
 }
 
 /*-----------------------------------Footer--------------------------*/
 .footer{
     background-color: #2E2F42;
+    padding: 100px 0 100px; 
 }
 
 .footer-container{
-    padding-top: 100px;
-    padding-bottom: 100px;
     text-indent: 0;
 }
 .footer-accent{
@@ -336,6 +358,8 @@ margin:0 auto;
         color: #4d5ae5; 
         text-decoration: none;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
         
 }
 .footer-description{
@@ -344,4 +368,5 @@ margin:0 auto;
     letter-spacing: 0.02em;
     text-align: left;
     color: #F4F4FD; 
+    max-width: 264px;
 }
